@@ -7,7 +7,6 @@ echo "Please enter your password to continue...";
 sudo clear;
 
 read -p "Do you want to install the xen dependencies and other software from apt? [ Y ]" ready
-#!/usr/bin/bash
 
 echo "Xen Hypervisor 4.11 amd64 autoconfig & installer v1.1BETA by https://github.com/independentcod";
 
