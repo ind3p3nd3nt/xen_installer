@@ -4,7 +4,7 @@ echo "Please enter your password to continue...";
 sudo clear;
 read -p "Do you want to install the xen dependencies and other software from apt? [ Y ]" ready
 case $ready in
-	Y) echo "Installing the necessary, please wait..." && sudo xterm -e sudo apt update && sudo apt install xen-hypervisor-4.11-amd64 xen-hypervisor-common xen-tools gparted xterm vinagre -y &
+	Y) echo "Installing the necessary, please wait..." && sudo apt update && sudo xterm -e sudo apt install xen-hypervisor-4.11-amd64 xen-hypervisor-common xen-tools gparted xterm vinagre -y &
 esac
 read -p "Do you want to launch the download of Windows-server-2019-evaluation.iso from Microsoft website? [ Y ]" dl
 case $dl in
