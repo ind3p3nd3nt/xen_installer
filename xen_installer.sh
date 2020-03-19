@@ -31,4 +31,6 @@ if read -p "Time to reboot your machine are you ready? (Make sure download is fi
 then case $ready in Y) echo "Once you are booted make sure you sre booting with xen and rerun this script for the second part of the setup. Rebooting in 15 seconds..." && sleep 15 && sudo reboot now;; esac
 fi
 if read -p "ARE YOU READY FOR THE 2ND PART OF THE SCRIPT? [ Y ]" ready;
-then case $ready in Y) echo "To connect to the virtual machine the protocol is SPICE and address is 127.0.0.1:1" && sudo xl create xen.cfg && vinagre sudo brctl addbr xenbr0 && sudo ifconfig xenbr0 up;; esac
+then case $ready in Y) echo "To connect to the virtual machine the protocol is SPICE and address is 127.0.0.1:1" && sudo xl create xen.cfg && vinagre sudo brctl addbr xenbr0 && sudo ifconfig xenbr0 up;
+fi
+esac
