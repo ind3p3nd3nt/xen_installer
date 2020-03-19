@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-echo 'Xen Hypervisor 4.11 amd64 autoconfig & installer v1.1BETA by https://github.com/independentcod';
+echo 'XEN Hypervisor 4.11 AMD64 Autoconfig & Installer v1.2 by https://github.com/independentcod';
 echo 'Please enter your password to continue...';
 sudo clear;
 read -p 'Do you want to install the xen dependencies and other software from apt? [ Y ]' ready;
@@ -10,7 +10,7 @@ read -p 'Do you want to launch the download of Windows-server-2019-evaluation.is
 case $dl in 
 Y) xterm -e wget -O windows-server-2019-evaluation.iso https://is.gd/winserver2019 & 
 esac
-read -p 'Do you want to edit your configurations? [ Y ]' edit;
+read -p 'Do you want to edit your configurations? [ Y ]' edit;i
 case $edit in
 Y) wget -O xen.cfg https://pastebin.com/raw/uDsnswQg;
 read -p 'Give a name to your Virtual Machine: [eg: WindowsServer]' name && sed -i~ -e "s|WindowsServer|server => \'${name}\',|g" xen.cfg;
