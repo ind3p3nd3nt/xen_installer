@@ -10,7 +10,7 @@ read -p 'Do you want to launch the download of Windows-server-2019-evaluation.is
 case $dl in 
 Y) xterm -e wget -O windows-server-2019-evaluation.iso https://is.gd/winserver2019 & 
 esac
-read -p 'Do you want to edit your configurations? [ Y ]' edit;i
+read -p 'Do you want to edit your configurations? [ Y ]' edit;
 case $edit in
 Y) wget -O xen.cfg https://pastebin.com/raw/uDsnswQg;
 read -p 'Give a name to your Virtual Machine: [eg: WindowsServer]' name && sed -i~ -e "s|WindowsServer|server => \'${name}\',|g" xen.cfg;
@@ -32,5 +32,5 @@ Y) echo 'Once you are booted make sure you sre booting with xen and rerun this s
 esac
 read -p 'ARE YOU READY FOR THE 2ND PART OF THE SCRIPT? [ Y ]' ready;
 case $ready in
-Y) echo 'To connect to the virtual machine the protocol is SPICE and address is 127.0.0.1:1' && sudo xl create xen.cfg && vinagre sudo brctl addbr xenbr0 && sudo ifconfig xenbr0 up;; 
+Y) echo 'To connect to the virtual machine the protocol is SPICE and address is 127.0.0.1:1' && vinagre sudo brctl addbr xenbr0 && sudo ifconfig xenbr0 up && sudo xl create xen.cfg;; 
 esac
