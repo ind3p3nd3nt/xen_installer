@@ -8,4 +8,4 @@ It was originally developed by the University of Cambridge Computer Laboratory a
 
 Using this script will help you setting up your virtual machine at ease without needing to manually configure the config files.
 
-This method isuch faster than using ware software and allows you to plug different devices including video cards to your VM
+This method is much faster than using VMware and allows you to plug different devices including video cards to your VM
