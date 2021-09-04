@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-echo 'XEN Hypervisor 4.11 AMD64 Autoconfig & Installer v1.2 by https://github.com/independentcod';
+echo 'XEN Hypervisor 4.14 AMD64 Autoconfig & Installer v1.2 by https://github.com/independentcod';
 echo 'Please enter your password to continue...';
 sudo clear;
 read -p 'Do you want to install the xen dependencies and other software from apt? [ Y ]' ready;
